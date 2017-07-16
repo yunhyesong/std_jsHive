@@ -63,8 +63,8 @@ $(function(){
 
 		elBtnPrev.on('click', function() {
 			var nNextIndex = (nCurrentIndex <= 0)
-				? nNextIndex = 0
-				: nNextIndex = nCurrentIndex - 1;
+				? 0
+				: nCurrentIndex - 1;
 
 			_updateUI(nNextIndex);
 			nCurrentIndex = nNextIndex;
@@ -72,8 +72,8 @@ $(function(){
 
 		elBtnNext.on('click', function() {
 			var nNextIndex = (nCurrentIndex < nItemsLength - 1)
-				? nNextIndex = nCurrentIndex + 1
-				: nNextIndex = nItemsLength - 1;
+				? nCurrentIndex + 1
+				: nItemsLength - 1;
 
 			_updateUI(nNextIndex);
 			nCurrentIndex = nNextIndex;
@@ -102,8 +102,8 @@ $(function(){
 
 		elBtnPrev.on('click', function() {
 			var nNextIndex = (nCurrentIndex <= 0)
-				? nNextIndex = nItemsLength - 1
-				: nNextIndex = nCurrentIndex - 1;
+				? nItemsLength - 1
+				: nCurrentIndex - 1;
 
 			_updateUI(nNextIndex);
 			nCurrentIndex = nNextIndex;
@@ -111,8 +111,8 @@ $(function(){
 
 		elBtnNext.on('click', function() {
 			var nNextIndex = (nCurrentIndex < nItemsLength - 1)
-				? nNextIndex = nCurrentIndex + 1
-				: nNextIndex = 0;
+				? nCurrentIndex + 1
+				: 0;
 
 			_updateUI(nNextIndex);
 			nCurrentIndex = nNextIndex;
