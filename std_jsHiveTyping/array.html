@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    var arrayNames = [273, 'String', true, function() {}, {}, [273, 103]];
+    console.log(arrayNames);
+
+    arrayNames[0] = 'test';
+    console.log(arrayNames);
+
+    /* *********************** */
+
+    var arrayNames = [];
+    console.log(arrayNames.length);
+    
+    arrayNames = [10, 20];
+    console.log(arrayNames.length);
+    
+    arrayNames[100] = 'A';
+    console.log(arrayNames.length);
+
+    arrayNames = [];                    // 다시 초기화
+
+    /* *********************** */
+
+    console.log(Array.prototype);       // 메서드 종류 확인
+    var arrayNames = [273, 'String', true, function() {}, {}, [273, 103]];
+    console.log(arrayNames.reverse());
+
+
+</script>
+</body>
+</html>

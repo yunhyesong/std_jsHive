@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    /*console.log('Hello World');
+
+    var a = 10;
+    var name = '홍길동';
+
+    console.log(a);
+    console.log(name);
+
+    var intNum = 34;
+    var singleStr = 'Volvo XC60';
+    var boolVar = true;
+    var emptyVar;
+    var nullVar = null;
+
+    console.log(typeof intNum, typeof singleStr, typeof boolVar, typeof emptyVar, typeof nullVar);
+
+    var objA = {val:40};
+    var objB = objA;
+
+    objB.val = 50;
+
+    console.log(objA.val);
+    console.log(objB.val);*/
+
+    /*if(4 < 5) {
+        alert('true')
+    }
+
+    if(2 > 9) {
+        alert('true');
+    } else {
+        alert('false');
+    }*/
+
+    /*var a = 74;
+
+    if(a > 90) {
+        console.log('수');
+    } else if(a > 84) {
+        console.log('우');
+    } else {
+        console.log('낙제');
+    }*/
+
+    /*var nA = '74';
+
+    switch (nA) {
+        case 10:
+            console.log('10');
+        break;
+        case 74:
+            console.log('74');
+        break;
+        case 97:
+            console.log('97');
+        break;
+        default:
+            console.log('default');
+        break;
+    }*/
+
+    /*for (var a = 0; a < 10; a++){
+        console.log(a);
+    }
+    console.log(a);
+
+    for (var b = 0, bmax = 10; b < bmax; b++){
+        console.log(b);
+    }*/
+
+    /*var nA = 0;
+
+    while (nA < 10) {
+        if (nA > 5) {
+            break;
+        }
+        console.log(nA);
+        nA++;
+    }
+
+    var nB = 0;
+
+    while (nB < 10) {
+        nB++;
+        if (nB==3 || nB==6) {
+            continue;
+        }
+        console.log(nB);
+    }*/
+
+    /*var sum = function(a,b) {
+        var c = a + b;
+        return false;
+    };
+    var nResult = sum(10, 20);
+
+    console.log(nResult);*/
+
+    /*(function (name) {
+        console.log('This is the immediate function -> ' + name);
+    })('foo');*/
+
+    /*var person = {
+        name : 'John',
+        fullName : function () {
+            return this.name;
+        }
+    };
+
+    var myObject = {
+        name : 'you'
+    }
+    
+    console.dir(person.fullName.call(myObject));*/
+
+    /*var nNum = 0;
+    var gallery = function () {
+        nNum++;
+
+        if (nNum <= 5){
+            clearId = setTimeout(gallery, 1000);
+        }
+        console.log(nNum);
+    }
+
+    var clearId = setTimeout(gallery, 1000);*/
+
+    var count = 1;
+    var gallery = function () {
+        console.log('다음 사진');
+        if(count == 5) {
+            clearInterval(clearId);
+        }
+        count += 1;
+    };
+
+    var clearId = setInterval(gallery, 1000);
+</script>
+</body>
+</html>

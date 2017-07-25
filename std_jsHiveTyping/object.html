@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+var objNames = {
+    a: 10,
+    name: '홍길동',
+    fn: function() {
+        //console.log(this.name);
+        console.log(this);
+        this.fn2();
+    },
+    fn2: function() {
+        console.log(this.fn2);
+    }
+};
+
+console.log(objNames);
+objNames.fn();
+
+//console.log(this);
+//console.log(window);
+
+for (var key in objNames) {
+    console.log(key, objNames[key]);
+}
+
+// delete objNames.name;
+
+// for (var key in objNames) {
+//     console.log(key, objNames[key]);
+// }
+
+console.log(objNames.hasOwnProperty('name'));
+console.log(Object.prototype);      // 메서드 종류 확인
+
+</script>
+</body>
+</html>
