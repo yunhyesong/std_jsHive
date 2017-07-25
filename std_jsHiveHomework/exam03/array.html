@@ -101,7 +101,7 @@ SEUI.Exam3.prototype = {
 
 		console.log(aTemp);
 	},
-	_getIndexOf(arr, item) {
+	_getIndexOf: function (arr, item) {
 		for (var i = 0, len = arr.length; i < len; i++) {
 			if (arr[i] === item) {
 				return i;
@@ -199,7 +199,7 @@ SEUI.Exam6.prototype = {
 
 		console.log(aExample);
 	},
-	_getRandomNumber(max, min) {
+	_getRandomNumber: function(max, min) {
 		return Math.floor( Math.random() * (max - min + 1) ) + min;
 	}
 };
@@ -233,7 +233,7 @@ SEUI.Exam7.prototype = {
 			console.log(this.aExample.splice(this._getRandomNumber(this.aExample.length - 1, 0), 1)[0], this.aExample);
 		};
 	},
-	_getRandomNumber(max, min) {
+	_getRandomNumber: function(max, min) {
 		return Math.floor( Math.random() * (max - min + 1) ) + min;
 	}
 };
@@ -268,10 +268,10 @@ SEUI.Exam8.prototype = {
 		}
 		console.log(aExample);
 	},
-	_getRandomNumber(max, min) {
+	_getRandomNumber: function(max, min) {
 		return Math.floor( Math.random() * (max - min + 1) ) + min;
 	},
-	_isInArray(arr, item) {
+	_isInArray: function(arr, item) {
 		for (var i = 0, len = arr.length; i < len; i++) {
 			if (arr[i] === item) {
 				return true;
